@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: #e5e5e5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #111;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  color: #ccc;
+}
+
+.small {
+  color: #777;
+}
+
+.menu p {
+  border-bottom: 1px solid #555;
+  width: 200px;
+  padding: 5px 0;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.hero-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255,255,255,0.1);
+}
+
+.content {
+  padding: 60px;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #111;
+  border: 1px solid #333;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+}
+
+/* reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* scroll bar */
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: white;
+  width: 0;
+}
+
